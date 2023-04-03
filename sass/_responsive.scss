@@ -1,0 +1,84 @@
+@media screen and (max-width:768px){
+    body .carousel{
+        width: 700px;
+        
+    }
+    header{
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    
+    .quinessomos{
+        overflow-y: scroll;
+        width: auto;
+    }
+    body .carousel{
+        width: 400px;
+        height: 200px;
+        margin: auto;
+        
+    }
+    .imgclientes{
+        border-style: solid;
+       
+       flex-wrap: wrap;
+       justify-content: space-around;
+}
+    header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .btnwhat{
+        position: fixed;
+        right: 40px;
+        bottom:20px;
+        animation: efecto 1.2s infinite;
+        border-radius: 50%;
+        
+    }
+    footer{
+        width: 300px;
+    }
+    .seccion2{
+        overflow-y: scroll;
+    }
+    .imagenesdeclientes{
+        width: 100px;
+        height:100px;}
+    
+    .divtrabajo {  
+         display: grid;
+        grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr,1fr;
+         gap: 9px 20px;
+         grid-auto-flow: row;
+         margin: 30px;
+            
+    }
+    footer .grid-container {
+        display: grid; 
+        grid-template-columns: 1fr; 
+       grid-template-areas: 
+            "Contacto"
+            "img"
+            "maps"; 
+        color: aliceblue;
+        text-shadow: 2px -2px black;
+        gap: 0.1px 0px; 
+        
+        font-size: 20px;
+       }
+
+      .Contacto { grid-area: Contacto; }
+      .img { grid-area: img; }
+      .maps { grid-area: maps;
+        width: 100px;
+        margin: auto;
+       
+     }
+    }

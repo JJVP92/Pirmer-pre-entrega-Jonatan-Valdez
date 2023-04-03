@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.titulosnuestros{
+    display: flex;
+    flex-direction:row;
+    height: 70px;
+    margin-top: 30px;
+}
+.logosdetrabajo{
+    width: 300px;
+    height: 70px;
+}
+.divtrabajo {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 9px 20px;
+    grid-auto-flow: row;
+    margin: 30px;
+    .imgtrabajos{
+        background-size:cover;
+        background-position: center;
+        height:250px;
+        display: flex;
+        &:hover{
+            transform: scale(1.3);
+            transition: 0.5s;
+        }
+    }
+    .pumacaja1{
+        background-image:url(../Imagenes/puma1.jfif);
+    }
+    .pumacaja2{
+        background-image:url(../Imagenes/puma2.jfif);
+    }
+    .pumacaja3{
+        background-image:url(../Imagenes/puma3.jfif);
+    }
+    .pumacaja4{
+        background-image:url(../Imagenes/puma4.jpeg);
+    }
+    .pumacaja5{
+        background-image:url(../Imagenes/puma5.jpg);
+    }
+    .pumacaja6{
+        background-image:url(../Imagenes/puma6.jpg);
+    }
+    .credicoopcaja1{
+            background-image:url(../Imagenes/credi1.jfif);
+    }
+    .credicoopcaja1{
+            background-image:url(../Imagenes/credi1.jfif);
+    }
+    .credicoopcaja2{
+            background-image:url(../Imagenes/credi2.jfif);
+    }
+    .credicoopcaja3{
+            background-image:url(../Imagenes/credi3.jpg);
+    }
+    .credicoopcaja4{
+            background-image:url(../Imagenes/credi4.jfif);
+    }
+    .credicoopcaja5{
+            background-image:url(../Imagenes/credi6.jpg);
+    }
+    .credicoopcaja6{
+            background-image:url(../Imagenes/credi5.jpg);
+    }
+    .galiciacaja1{
+            background-image: url(../Imagenes/g1.jpg);
+    }
+    .galiciacaja2{
+            background-image: url(../Imagenes/g3.jpg);
+    }
+    .galiciacaja3{
+            background-image: url(../Imagenes/g2.jpg);
+    }
+    .galiciacaja4{
+            background-image: url(../Imagenes/g4.jpg);
+    }
+
+    
+    
+}

@@ -1,0 +1,163 @@
+$cubrir:cover;
+@mixin flex($justify, $aling) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    background: rgb(1,8,3);
+    background: linear-gradient(176deg, rgba(1,8,3,1) 11%, rgba(10,31,10,1) 36%);
+    font-family: 'Work Sans', sans-serif;
+}
+
+p{
+    padding: 30px;
+    color: aliceblue;
+}
+h2{
+    font-size:40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(245, 248, 250);
+    padding: 10px;
+}
+h1{
+    font-size:30px;
+    color: rgb(235, 240, 242);
+    padding: 10px;
+}
+    
+header {
+    background-color: rgb(194, 199, 203);
+    @include flex(space-between,center);
+    margin-bottom: 20px;
+    height: 55px;
+    .logo1{
+        width:190px;
+        }
+    .logo:hover{
+            transform: scale(1.2);
+            transition:0.5s;
+        }
+            
+    nav{
+        .menu {
+            color: black;
+            text-align: center;
+            list-style: none;
+            margin-right: 50px;
+            font-size: 40px;
+            li{
+                display:inline-block;
+                font-size: 1rem;
+                padding: .2rem;
+                position: relative;
+                &:hover .submenu{
+                    display: block;
+                
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(9, 9, 9);
+                    &:hover{
+                        color: rgb(10, 10, 10);
+                        background-color: #6c7780;
+                        border-radius: 20px;
+                        transition: 0.5s;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+ }
+ main{
+    .carousel{
+        width: 1180px;
+        margin:auto;
+       height: 500px;
+    } 
+    .textocarrusel{
+        color: rgb(230, 220, 220);
+       text-shadow: -1.5px 2.5px rgb(9, 9, 9);
+        
+    }
+    .quinessomos{
+        background-image:url(../Imagenes/planta.png);
+        height: 500px;
+        background-attachment: fixed;
+        margin: 50px;
+        border-radius: 20px;
+        text-shadow: -1px 2px rgb(3, 3, 3);
+        overflow-y: scroll;
+        background-size: $cubrir;
+    }
+    .seccion1{
+        margin: 50px;
+        .imgclientes{
+            @include flex(space-around,center);
+           
+            .imagenesdeclientes{
+                width: 100px;
+            }
+        }
+    }
+
+
+ }
+ section{
+    .btnwhat{
+        position: fixed;
+        right: 50px;
+        bottom:20px;
+        animation: efecto 1.2s infinite;
+        border-radius: 50%;
+        @keyframes efecto{
+            0%{
+                box-shadow: 0 0 0 0 rgba(248, 247, 247, 0.85);
+            }
+            100%{
+                box-shadow: 0 0 0 25px rgba(235, 8, 8, 0);
+            }
+          
+        }
+        &:hover{
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+
+        .what{
+            width: 100px;
+            height: 90px;
+        }
+    }
+ }
+ footer{
+    .grid-container {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 12px 20px;
+        grid-template-areas: 
+          "Contacto maps maps"
+          "img maps maps"; 
+        color: aliceblue;
+        text-shadow: 2px -2px black;
+        padding: 10px;
+        
+        font-size: 20px;
+        .Contacto { grid-area: Contacto; }
+        .img { grid-area: img; }
+        .maps { grid-area: maps;
+        display: flex;
+        justify-content: center;
+        }
+  
+        }
+    }
+
+@import "nuestrostrabajos";
+@import "servicios";
+@import "responsive"

@@ -1,0 +1,11 @@
+$cubrir:cover;
+.seccion2{
+   background-image: url(../Imagenes/industriajpg.jpg); 
+   background-size: cover;
+    height: 600px;
+	background-attachment: fixed;
+	background-size:$cubrir;
+	margin: 50px;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
