@@ -40,5 +40,5 @@ El algoritmo tiene el siguente desarrollo :
 11. Se agrego la posibilidad de modificar los precios de los elemntos atravez de una validacion de contraseña  
     donde si es correcta, nos da la posibilidad de modifciar el array de objetos con el valor que ingresamos atravez
     de un promt, donde lo divide por 100 y asi calcular el aumento que le queremos dar y transformalo con la funcion de orden
-    superiro .map
+    superiro .map.
 
